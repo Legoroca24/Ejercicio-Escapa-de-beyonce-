@@ -1,0 +1,40 @@
+#game-area {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    height: 500px;
+    position: relative;
+    width: 500px;
+}
+
+.personaje {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+#player {
+    background-color: rgb(255, 0, 0);
+}
+
+#beyonce {
+    background-image: url('beyonce.jpg');
+    background-size: cover;
+}
+
+#config-menu {
+    background: #d5caca;
+    padding: 20px;
+    border: 1px solid #0b0a0a;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#config-menu h2 {
+    margin-bottom: 10px;
+}
+
+#config-menu label, #config-menu input, #config-menu select {
+    display: block;
+    margin: 10px auto;
+}

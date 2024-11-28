@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escapa de Beyonce</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Escapa de Beyonce</h1>
+    
+    <!--Configuracion del juego-->
+    <div id="config-menu">
+        <h2>Configuración del Juego</h2>
+        <label for="player-speed">Velocidad del jugador:</label>
+        <input type="number" id="player-speed" min="10" max="100" value="35">
+
+        <label for="beyonce-speed">Velocidad de Beyoncé:</label>
+        <input type="number" id="beyonce-speed" min="1" max="10" value="2">
+
+        <label for="game-area-size">Tamaño del área de juego:</label>
+        <select id="game-area-size">
+            <option value="small">Pequeño</option>
+            <option value="medium" selected>Mediano</option>
+            <option value="large">Grande</option>
+        </select>
+
+        <label for="music-theme">Tema musical:</label>
+        <select id="music-theme">
+            <option value="default">Predeterminado</option>
+            <option value="fast">fast</option>
+            <option value="lofi">lofi</option>
+        </select>
+
+        <button id="start-game">Iniciar Juego</button>
+    </div>
+    
+    <!--Zona del juego-->
+    <div id="game-area" style="display: none;">
+        <div id="player" class="personaje"></div>
+        <div id="beyonce" class="personaje"></div>
+    </div>
+    
+    <!--Musica-->
+    <audio src="single.m4a"></audio>
+    
+    <script src="app.js"></script>
+</body>
+</html>
